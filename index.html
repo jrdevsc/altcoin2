@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <title>Ryan's AltCoinz</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <div class="container">
       <div class="jumbotron text-center">
+        <div id="globals"></div>
         <h1>Ryan's AltCoin filter</h1>
-        <p>Under 1b market cap</p>
-        <p>Under 200m circulating supply</p>
+        <h3>Under 1b market cap</h3>
+        <h3>Under 200m circulating supply</h3>
         <button class="btn btn-warning" id="findMe">Click Me!</button>
-        <hr>
-        <p id="globals"></p>
       </div>
   </div>
 
@@ -28,6 +29,7 @@
       <th scope="col">Market Cap</th>
       <th scope="col">Circulating Supply</th>
       <th scope="col">Price USD</th>
+      <th scope="col">View</th>
     </tr>
   </thead>
   <tbody id="results">

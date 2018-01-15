@@ -2,5 +2,31 @@ body{
   background: #00b09b;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #96c93d, #00b09b);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #96c93d, #00b09b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.jumbotron{
+  background-color: rgba(0, 0, 0,  .3);
+}
+
+.jumbotron h1, .jumbotron h3{
+  font-family: 'Joti One', cursive;
+  text-shadow: 2px 2px 1px rgba(255, 255, 255, .3);
+}
+
+#globals{
+  color: white;
+  margin-bottom: 60px;
+  margin-top: 0px;
+}
+
+#findMe{
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent !important;
+  color: white;
+}
+
+table{
+  text-shadow: 2px 2px 1px rgba(255, 255, 255, .3);
+  font-family: 'Roboto', sans-serif;
 }

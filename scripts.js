@@ -12,7 +12,7 @@ axios.get(gUrl)
 
   function fillGlobal(data){
     console.log(data);
-    $('#globals').html(`<p>Total Market Cap: $ ${data.total_market_cap_usd}</p><p>Total 24H Volume: $ ${data.total_24h_volume_usd}</p><p>BTC Percentage of Market Cap: ${data.bitcoin_percentage_of_market_cap}%</p>`)
+    $('#globals').html(`<p>Total Market Cap: $ ${data.total_market_cap_usd} Total 24H Volume: $ ${data.total_24h_volume_usd} BTC Percentage of Market Cap: ${data.bitcoin_percentage_of_market_cap}%</p>`)
   }
 
 
@@ -36,7 +36,7 @@ $('#findMe').on('click', function(){
       const myCSupply = parseInt(data[i].available_supply);
       if(myMC <= maxMC && myCSupply <= circSupply){
         console.log(data[i]);
-        $('#results').append(`<tr><th scope="row">${data[i].symbol}</th><td>${data[i].name}</td><td>${data[i].market_cap_usd}</td><td>${data[i].available_supply}</td><td>${data[i].price_usd}</td></tr>`)
+        $('#results').append(`<tr><th scope="row">${data[i].symbol}</th><td>${data[i].name}</td><td>${data[i].market_cap_usd}</td><td>${data[i].available_supply}</td><td>${data[i].price_usd}</td><td><a class="btn btn-danger btn-xs" href="https://coinmarketcap.com/currencies/${data[i].id}/">View</a></td></tr>`)
 
 
       }
